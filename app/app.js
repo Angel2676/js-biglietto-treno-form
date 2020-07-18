@@ -1,4 +1,4 @@
-var datiP = document.getElementById("nomeCognome").value;
+// var datiP = document.getElementById("nomeCognome").value;
 // inserire valori al tasto genera
 // var pas = document.getElementById("nomePasseggero").innerHTML = datiP;
 // console.log(pas);
@@ -35,6 +35,7 @@ var datiKm = document.getElementById("km").value;
 // *******FUNZIONI*********
 
 document.getElementById("aggiungi").addEventListener("click", function(){
+    var datiP = document.getElementById("nomeCognome").value;
     var comp = document.getElementById("out");
     comp.className = "show";
     var pas = document.getElementById("nomePasseggero").innerHTML = datiP;
