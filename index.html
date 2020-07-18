@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biglietto Treno</title>
+    </head>
+    <body>
+        <div class="titolo">
+            <h2>Calcola il prezzo del tuo Biglietto</h2>
+        </div>
+        <!-- QUESTO SONO I DATI DI UNPUT DELL'UTENTE -->
+        <div class="data-input">
+
+            <div class="data-input1">
+                <h5>Nome e Cognome</h5>
+                <h5>Inserisci KM</h5>
+                <h5>Inserisci Età</h5>
+            </div>
+
+            <div class="data-input2">
+                <input type="text" id="nomeCognome">
+                <input type="text" id="km">
+                <!-- <input type="text"id="fascia"> -->
+                <label for="fascia"></label>
+                <select id="fascia" class="fascia" name="eta">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
+                 </select>
+
+<!-- chiudere div -->
+            </div>
+
+            <div class="data-input3">
+                <button type="button" id="aggiungi">Genera</button>
+                <button type="button" id="rimuovi"name="button">Annulla</button>
+
+            </div>
+        </div>
+
+        <!-- QUESTI SONO I DATI DI OUTPUT DEL CLIENTE -->
+        <div class="titolo">
+            <h2>IL TUO BIGLIETTO</h2>
+        </div>
+
+        <div id="out"class="data-output hidden">
+            <div class="sub_title">
+                <h3>Dettagli Passeggeri</h3>
+                <hr>
+            </div>
+            <div class="data-output1">
+                <h5>NOME PASSEGGERO</h5>
+                <h5>Offerta</h5>
+                <h5>Carrozza</h5>
+                <h5>Codice CP</h5>
+                <h5>Costo Biglietto</h5>
+            </div>
+                <div class="data-output2">
+                <div id="nomePasseggero">  </div>
+                <div id="offerta">  </div>
+                <div id="carrozza">  </div>
+                <div id="codiceCp">  </div>
+                <div id="costoBiglietto">  </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script src="app/app.js" charset="utf-8"></script>
+
+    </body>
+</html>
